@@ -104,6 +104,23 @@
                                     <rect key="frame" x="16" y="304" width="345" height="30"/>
                                 </variation>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Location" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vDE-BV-JK2">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="348" width="345" height="30"/>
+                                </variation>
+                            </textField>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3iS-Vj-s6j">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="193" width="206" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -113,6 +130,8 @@
                                 <exclude reference="HfY-ab-uXM"/>
                                 <exclude reference="6sD-YS-y8I"/>
                                 <exclude reference="MVz-Q3-PUQ"/>
+                                <exclude reference="vDE-BV-JK2"/>
+                                <exclude reference="3iS-Vj-s6j"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -122,14 +141,18 @@
                                 <include reference="HfY-ab-uXM"/>
                                 <include reference="6sD-YS-y8I"/>
                                 <include reference="MVz-Q3-PUQ"/>
+                                <include reference="vDE-BV-JK2"/>
+                                <include reference="3iS-Vj-s6j"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="enterLocationTextField" destination="vDE-BV-JK2" id="9pc-Sl-9Dx"/>
                         <outlet property="enterMessageTextField" destination="MVz-Q3-PUQ" id="UFh-IO-BVz"/>
                         <outlet property="enterNameTextField" destination="6sD-YS-y8I" id="ETI-wW-iab"/>
                         <outlet property="mailButton" destination="dbN-e3-gpL" id="A91-1j-39N"/>
                         <outlet property="messageLabel" destination="HfY-ab-uXM" id="aUq-Wp-Q4j"/>
+                        <outlet property="messageLabel2" destination="3iS-Vj-s6j" id="wle-4p-CRA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
